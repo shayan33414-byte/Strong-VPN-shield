@@ -1,0 +1,31 @@
+let connected = false;
+
+const status = document.getElementById("status");
+const connectBtn = document.getElementById("connectBtn");
+const disconnectBtn = document.getElementById("disconnectBtn");
+
+function connectVPN() {
+    connected = true;
+
+    status.innerHTML =
+        "🟢 Connected<br><br>" +
+        "🌍 Server: United States<br>" +
+        "🔒 Encryption: AES-256<br>" +
+        "📶 Ping: 28 ms<br>" +
+        "🚀 Download: 425 Mbps";
+}
+
+function disconnectVPN() {
+    connected = false;
+
+    status.innerHTML =
+        "🔴 Disconnected";
+}
+
+if (connectBtn) {
+    connectBtn.addEventListener("click", connectVPN);
+}
+
+if (disconnectBtn) {
+    disconnectBtn.addEventListener("click", disconnectVPN);
+}

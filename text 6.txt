@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shield VPN Strong - Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">🚀</div>
+
+    <h1>Speed Test</h1>
+
+    <p id="speedStatus">
+        Ready to test
+    </p>
+
+    <button onclick="runSpeedTest()">
+        Start Test
+    </button>
+
+    <br><br>
+
+    <a href="index.html">
+        <button>⬅ Back</button>
+    </a>
+
+</div>
+
+<script>
+function runSpeedTest() {
+    document.getElementById("speedStatus").innerHTML =
+        "Testing...";
+
+    setTimeout(function() {
+        document.getElementById("speedStatus").innerHTML =
+        "📥 Download: 425 Mbps<br><br>" +
+        "📤 Upload: 210 Mbps<br><br>" +
+        "📶 Ping: 28 ms";
+    }, 2000);
+}
+</script>
+
+</body>
+</html>

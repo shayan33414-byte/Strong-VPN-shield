@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shield VPN Strong - Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">⚙️</div>
+
+    <h1>Settings</h1>
+
+    <label>
+        <input type="checkbox">
+        Auto Connect
+    </label>
+
+    <br><br>
+
+    <label>
+        <input type="checkbox">
+        Kill Switch (Demo)
+    </label>
+
+    <br><br>
+
+    <label>
+        <input type="checkbox">
+        Dark Mode
+    </label>
+
+    <br><br>
+
+    <label>
+        <input type="checkbox">
+        Notifications
+    </label>
+
+    <br><br>
+
+    <a href="index.html">
+        <button>⬅ Back</button>
+    </a>
+
+</div>
+
+</body>
+</html>
