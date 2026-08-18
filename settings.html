@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferences — Strong VPN Shield Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <p class="demo-banner" role="note">
+        These preferences affect this browser demo only.
+      </p>
+
+      <section class="panel" aria-labelledby="page-title">
+        <div class="logo" aria-hidden="true">⚙️</div>
+        <p class="eyebrow">Prototype controls</p>
+        <h1 id="page-title">Preferences</h1>
+
+        <div class="setting-list">
+          <label>
+            <span
+              ><strong>Auto-start demo</strong
+              ><small>Changes the prototype's initial state.</small></span
+            >
+            <input type="checkbox" data-setting="autoConnect" />
+          </label>
+          <label>
+            <span
+              ><strong>Kill switch concept</strong
+              ><small
+                >Visual setting only; it cannot block traffic.</small
+              ></span
+            >
+            <input type="checkbox" data-setting="killSwitch" />
+          </label>
+          <label>
+            <span
+              ><strong>Dark mode</strong
+              ><small>Uses the darker interface theme.</small></span
+            >
+            <input type="checkbox" data-setting="darkMode" />
+          </label>
+          <label>
+            <span
+              ><strong>Demo notifications</strong
+              ><small>Shows status messages inside the page.</small></span
+            >
+            <input type="checkbox" data-setting="notifications" />
+          </label>
+        </div>
+
+        <p id="settingsNotice" class="notice" aria-live="polite"></p>
+        <a class="button button--primary button--link" href="index.html"
+          >← Back to demo</a
+        >
+      </section>
+    </main>
+  </body>
+</html>
