@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An interactive front-end prototype for the Strong VPN Shield concept."
+    />
+    <title>Strong VPN Shield — Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <p class="demo-banner" role="note">
+        Interactive prototype — this website does not create a VPN connection or
+        encrypt internet traffic.
+      </p>
+
+      <section class="panel" aria-labelledby="page-title">
+        <div class="logo" aria-hidden="true">🛡️</div>
+        <p class="eyebrow">Strong VPN Shield</p>
+        <h1 id="page-title">Connection demo</h1>
+        <p class="intro">
+          Explore the planned experience for choosing a location, changing
+          preferences, and viewing connection status.
+        </p>
+
+        <div id="status" class="status status--off" aria-live="polite">
+          <span class="status__dot" aria-hidden="true"></span>
+          <div>
+            <strong>Demo disconnected</strong>
+            <span>No network settings have been changed.</span>
+          </div>
+        </div>
+
+        <dl class="details">
+          <div>
+            <dt>Selected location</dt>
+            <dd id="selectedServer">United States</dd>
+          </div>
+          <div>
+            <dt>Protection</dt>
+            <dd>Simulation only</dd>
+          </div>
+        </dl>
+
+        <div class="actions">
+          <button id="connectBtn" class="button button--primary" type="button">
+            Start demo
+          </button>
+          <button id="disconnectBtn" class="button" type="button" disabled>
+            Stop demo
+          </button>
+        </div>
+
+        <nav class="nav-grid" aria-label="Demo pages">
+          <a href="servers.html">🌍 Locations</a>
+          <a href="settings.html">⚙️ Preferences</a>
+          <a href="speed-test.html">🚀 Speed simulation</a>
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>
